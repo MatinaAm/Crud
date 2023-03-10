@@ -27,18 +27,18 @@ export const Form = (props) => {
     let reader = new FileReader();
 
     reader.onload = (event) => {
-      compress(event.target.result, {
+      compress(event?.target?.result, {
         width: 300,
         type: "image/png", // default
-        max: 200, // max size
-        min: 20, // min size
+        max: 300, // max size
+        min: 50, // min size
         quality: 0.7,
       }).then((result) => {
         console.log(result);
         setFile(result);
       });
     };
-    reader.readAsDataURL(e[0]);
+    reader.readAsDataURL(e?.[0]);
   };
 
   // ===========onSubmitHandler============
@@ -93,7 +93,7 @@ export const Form = (props) => {
               </div>
 
               <div className="input-box wide">
-                <span className="details">address</span>
+                <span className="details">Address</span>
                 <input
                   type="text"
                   {...register("address")}
@@ -113,8 +113,8 @@ export const Form = (props) => {
                   name="avatar"
                   accept="image/png, image/jpeg"
                   onChange={(e) => {
-                    setSelectedFile(e.target.files[0]);
-                    getFile(e.target.files);
+                    setSelectedFile(e?.target?.files[0]);
+                    getFile(e?.target?.files);
                   }}
                 />
 

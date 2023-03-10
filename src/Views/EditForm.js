@@ -80,7 +80,7 @@ const EditForm = (props) => {
               </div>
 
               <div className="input-box wide">
-                <span className="details">address</span>
+                <span className="details">Address</span>
                 <input
                   type="text"
                   defaultValue={post?.address}

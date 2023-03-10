@@ -156,12 +156,13 @@ body {
   margin: 5px 0 10px;
 }
 
-.cards_wrap .card_item .film {
+.cards_wrap .card_item .address {
   padding-top: 50px;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
   color: #7b8ca0;
+  font-weight: 600!important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -542,3 +543,4 @@ margin-left: 5px;
 
   inset: 50% auto auto 50%!important;
 }    
+

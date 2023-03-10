@@ -33,8 +33,8 @@ const User = (props) => {
               }}
             >
               <div class="circle-txt">
-                {post?.firstName?.substring(0, 1)}{" "}
-                {post?.lastName?.substring(0, 1)}
+                {(post?.firstName?.substring(0, 1))?.toUpperCase()}{" "}
+                {(post?.lastName?.substring(0, 1))?.toUpperCase()}
               </div>
             </div>
           )}
@@ -55,7 +55,7 @@ const User = (props) => {
           </div>
         </div>
 
-        <div class="film">{post?.address}</div>
+        <div class="address">{post?.address}</div>
       </div>
     </div>
   );

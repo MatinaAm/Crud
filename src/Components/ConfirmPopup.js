@@ -11,22 +11,17 @@ export const ConfirmPopup = (props) => {
             <div className="user-details"></div>
 
             <div className="button">
-              <button
-                type="submit"
-                className="bg-red"
-                onClick={props.deleteOK}
-             
-            >
-                              Delete
-                              </button>
+              <button type="submit" className="bg-red" onClick={props.deleteOK}>
+                Delete
+              </button>
 
               <button
-              type="button"
+                type="button"
                 className="bg-gray "
                 onClick={props.closeModal}
               >
                 Close
-                </button>
+              </button>
             </div>
           </form>
         </div>

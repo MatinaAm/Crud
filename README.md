@@ -1,3 +1,21 @@
+
+
+
+# Usage
+## To run the fake server:
+
+### install json-server if you don't have it:
+`npm install -g json-server`
+
+### run it to update automatically:
+`json-server --watch contacts.json --port 5000`
+
+## To run the app:
+### `npm start`
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the 
+browser.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -21,7 +21,6 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     zIndex: "3",
     // height: '70vh',
-    // width: '60%',
   },
 };
 
@@ -125,7 +124,6 @@ const Users = (props) => {
 
             <Modal
               isOpen={modalConfirmOpen}
-              // onAfterOpen={afterOpenModal}
               onRequestClose={closeModal}
               style={customStyles}
               contentLabel="Example Modal"
@@ -139,8 +137,6 @@ const Users = (props) => {
         ))}
 
         <div class="card_item revealer">
-          {/* <div className=""> */}
-
           <div class="card_inner">
             <div
               className="center"
