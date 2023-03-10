@@ -9,9 +9,6 @@ import { addNew } from "../actions/actionsCreator";
 
 import { formSchema } from "./yupRegex";
 
-
-
-
 export const Form = (props) => {
   const {
     register,
@@ -42,7 +39,6 @@ export const Form = (props) => {
       });
     };
     reader.readAsDataURL(e[0]);
-
   };
 
   // ===========onSubmitHandler============
@@ -54,7 +50,7 @@ export const Form = (props) => {
     // getPostInfo()
 
     console.log(data, "data============");
-    props.closeModal()
+    props.closeModal();
 
     reset();
   };
@@ -130,7 +126,6 @@ export const Form = (props) => {
                 <hr className="color-gray" />
               </div>
 
-             
               <div className="input-box">
                 <span className="details">facebook</span>
                 <input
@@ -171,8 +166,18 @@ export const Form = (props) => {
             </div>
 
             <div className="button">
-              <button type="submit" className="bg-blue"  > ADD</button>
-              <button type="button" className="bg-gray" onClick={props.closeModal} > CLOSE</button>
+              <button type="submit" className="bg-blue">
+                {" "}
+                ADD
+              </button>
+              <button
+                type="button"
+                className="bg-gray"
+                onClick={props.closeModal}
+              >
+                {" "}
+                CLOSE
+              </button>
             </div>
           </form>
         </div>

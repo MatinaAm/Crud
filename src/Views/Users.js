@@ -2,13 +2,9 @@ import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import Modal from "react-modal";
 import { FaArrowRight, FaLongArrowAltRight, FaPlus } from "react-icons/fa";
-import Graph from '../assets.png';
+import Graph from "../assets.png";
 
-
-import {
-  deleteAContact,
-  showAllContacts,
-} from "../actions/actionsCreator";
+import { deleteAContact, showAllContacts } from "../actions/actionsCreator";
 import User from "./User";
 import Dexie from "dexie";
 import Form from "../Components/Form";
@@ -44,7 +40,6 @@ const Users = (props) => {
     setModalConfirmOpen(true);
     setIdDelete(id);
   }
-
 
   function closeModal() {
     setModalConfirmOpen(false);
@@ -101,8 +96,6 @@ const Users = (props) => {
     getPosts();
   }, []);
 
-
-
   const results1 = props?.contacts?.filter((props) =>
     posts.some((a) => a.title === props.picture)
   );
@@ -120,31 +113,6 @@ const Users = (props) => {
   return (
     <div class="wrapper ">
       {/* ==========modal============ */}
-      
-      <div className="display_center">
-        <div className="first_section" style={{display:'flex'}}>
-        <FaArrowRight  fill="#4070f4" size={"20px"} className="mt-2" />
-
-<p>Contact</p>
-
-        </div>
-
-        <div className="sec_section" style={{display:'flex'}}>
-          <div className="mr-2">
-          <p  >visitors</p>
-<img src={Graph} width="50" height="30"/>
-          </div>
-
-          <div className="mr-2">
-          <p  >visits</p>
-<img src={Graph}  width="50" height="30"/>
-          </div>
-
-{/* <p>visits</p> */}
-
-        </div>
-
-      </div>
 
       <div class="cards_wrap">
         {props?.contacts?.map((post) => (
@@ -155,7 +123,6 @@ const Users = (props) => {
               update={() => openUpdateModal(post)}
             />
 
-            
             <Modal
               isOpen={modalConfirmOpen}
               // onAfterOpen={afterOpenModal}
@@ -163,10 +130,10 @@ const Users = (props) => {
               style={customStyles}
               contentLabel="Example Modal"
             >
-
-<ConfirmPopup closeModal={closeModal} deleteOK={() => deleteOK()}  />
-
-          
+              <ConfirmPopup
+                closeModal={closeModal}
+                deleteOK={() => deleteOK()}
+              />
             </Modal>
           </>
         ))}
@@ -182,10 +149,12 @@ const Users = (props) => {
               <div className=" child_center">
                 Add New Contact
                 <br />
-                <button onClick={openAddUserModal} type="button" style={{marginTop:'10px'}}>
+                <button
+                  onClick={openAddUserModal}
+                  type="button"
+                  style={{ marginTop: "10px" }}
+                >
                   <FaPlus fill="#4094f4" size={"20px"} />
-
-         
                 </button>
               </div>
             </div>

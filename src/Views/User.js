@@ -1,9 +1,7 @@
 import React, { Component, useEffect } from "react";
-import { FaEdit , FaTrash  } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 //Redux:
-
-
 
 const User = (props) => {
   const { post } = props;
@@ -46,11 +44,14 @@ const User = (props) => {
 
         <div className="hidden">
           <div className="button-justify">
-         
-            <FaEdit onClick={props.update}  className="mr-2" fill="#157DEC" size={"27px"} />
+            <FaEdit
+              onClick={props.update}
+              className="mr-2"
+              fill="#157DEC"
+              size={"27px"}
+            />
 
             <FaTrash onClick={props.delete} fill="red" size={"25px"} />
-      
           </div>
         </div>
 

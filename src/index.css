@@ -123,7 +123,6 @@ body {
 }
 
 .cards_wrap .card_item img {
-
   width: 100px;
   height: 100px;
   margin-bottom: 5px;
@@ -132,8 +131,8 @@ body {
   display: flex;
 }
 
-.circular_image{
-	width: 100%;
+.circular_image {
+  width: 100%;
 }
 .cards_wrap .card_item .role_name {
   text-align: center;
@@ -145,8 +144,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-    padding-top: 18px;
-
+  padding-top: 18px;
 }
 
 .cards_wrap .card_item .real_name {
@@ -335,41 +333,38 @@ label.cover i {
   text-align: center;
 }
 
-.ReactModal__Content{
-	border: unset!important;
+.ReactModal__Content {
+  border: unset !important;
 }
 .ReactModal__Overlay {
-	background-color: rgba(236, 234, 234, 0.75)!important;
-  
+  background-color: rgba(236, 234, 234, 0.75) !important;
 }
-
 
 /* =======confirm=========== */
 
-
- .res-circle {
-text-align: center;
-margin-left: auto;
-margin-right: auto; 
- width: 100px;
- height: 100px;
+.res-circle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 
-  /* (B) BACKGROUND COLOR */ 
+  /* (B) BACKGROUND COLOR */
   /* background: #40c7f4; */
- 
+
   /* (C) NECESSARY TO POSITION TEXT BLOCK */
   line-height: 0;
   position: relative;
 }
- 
+
 /* (D) MATCH HEIGHT */
 .res-circle::after {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
- 
+
 /* (E) TEXT BLOCK */
 .circle-txt {
   /* (E1) CENTER TEXT IN CIRCLE */
@@ -378,15 +373,13 @@ margin-right: auto;
   width: 100%;
   text-align: center;
   color: white;
- 
+
   /* (E2) THE FONT - NOT REALLY IMPORTANT */
   font-family: arial, sans-serif;
   font-weight: bold;
 }
 
-
 /* ========================== */
-
 
 .search {
   /* width: 100%;
@@ -400,7 +393,7 @@ margin-right: auto;
   border: 1px solid #bababa;
   padding: 9px;
   height: 20px;
-  border-radius: 5px ;
+  border-radius: 5px;
   outline: none;
   color: #9dbfaf;
   height: 100%;
@@ -415,34 +408,28 @@ margin-right: auto;
   height: 36px;
   border: 1px solid #00b4cc;
   background: #00b4cc; */
- 
+
   /* border-radius: 0 5px 5px 0; */
   cursor: pointer;
   position: absolute;
   right: 17px;
-    top: 5px;
-    background: unset;
-    border: unset;
+  top: 5px;
+  background: unset;
+  border: unset;
 }
 
 /*Resize the wrap to see the search bar change!*/
 .wrap_serach {
   /* margin: 20px auto; */
-  margin: 20px ;
+  margin: 20px;
 
   width: 100%;
-  max-width: 250px;
-/* display: flex;  */
+  /* display: flex;  */
 }
 
-
-
-
-
-p{    word-break: break-all}
-
-
-
+p {
+  word-break: break-all;
+}
 
 .center {
   height: 350px;
@@ -457,7 +444,7 @@ p{    word-break: break-all}
   width: 150px;
   height: 150px;
 }
-.child_center > button{
+.child_center > button {
   padding: 14px 18px;
   margin-top: 5px;
   border-radius: 10px;
@@ -465,58 +452,51 @@ p{    word-break: break-all}
   background: unset;
 }
 
-.mr-2{
+.mr-2 {
   margin-right: 10px;
 }
 
-.mb-10{
+.mb-10 {
   margin-top: 10px;
-
 }
-.color-gray{
+.color-gray {
   /* margin-top: 7px; */
   opacity: 0.5;
   margin-top: 40px;
   margin-bottom: 15px;
-
-
 }
-.red_color{
-  color:red;
+.red_color {
+  color: red;
   font-size: 14px;
 }
 
-
-.user-details .input-box input:focus, .user-details .input-box input:valid {
-  border: 1px solid #d0cfcf!important;
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border: 1px solid #d0cfcf !important;
 }
 
-.bg-red{
+.bg-red {
   background: red;
 }
 
-
-.mt-2{
-  margin-top:5px
+.mt-2 {
+  margin-top: 5px;
 }
 
-.display_center{
+.display_center {
   display: flex;
   justify-content: space-between;
   margin: 15px 35px;
 }
 
-.first_section p{
-font-size: 20px;
-margin-left: 5px;
+.first_section p {
+  font-size: 20px;
+  margin-left: 5px;
 }
 
-@media screen and (min-width: 768px) {
-
-.wrap_serach {
-
-  margin-left: 150px!important;
+@media screen and (min-width: 770px) {
+  .wrap_serach {
+    margin-left: 25px !important;
+    max-width: 350px;
+  }
 }
-
-}
-

@@ -18,9 +18,9 @@ export const Header = (props) => {
   return (
     <div id="navbar">
       <nav className="navigation">
-        <h1  className="brand-name">
-          Lunar
-        </h1>
+        {/* <h1  className="brand-name">
+          Brand
+        </h1> */}
         <Search fill="black" />
        
         <div

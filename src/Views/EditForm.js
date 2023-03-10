@@ -33,8 +33,7 @@ const EditForm = (props) => {
 
     props.editForm(data);
 
-    props.closeModal()
-
+    props.closeModal();
 
     reset();
   };
@@ -91,7 +90,6 @@ const EditForm = (props) => {
                 <p className="red_color">{errors?.address?.message}</p>
               </div>
 
-
               <div className="input-box">
                 <span className="details">facebook</span>
                 <input
@@ -136,10 +134,18 @@ const EditForm = (props) => {
             </div>
 
             <div className="button">
-
-            <button type="submit" className="bg-blue"  > Edit</button>
-              <button type="button" className="bg-gray" onClick={props.closeModal} > CLOSE</button>
-
+              <button type="submit" className="bg-blue">
+                {" "}
+                Edit
+              </button>
+              <button
+                type="button"
+                className="bg-gray"
+                onClick={props.closeModal}
+              >
+                {" "}
+                CLOSE
+              </button>
             </div>
           </form>
         </div>

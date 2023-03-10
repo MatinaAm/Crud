@@ -27,8 +27,7 @@ const Search = (props) => {
             props.searchFunction(searchTerm);
           }}
         >
-          
-          <FaSearch  fill="gray" size={"15px"} className="mt-2" />
+          <FaSearch fill="gray" size={"15px"} className="mt-2" />
           {/* <FontAwesomeIcon icon={faSearch} /> */}
         </button>
       </div>
