@@ -27,6 +27,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  background-image: url("mesh-gradient.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  height: 100%;
 }
 
 h1 a {
@@ -79,9 +84,9 @@ h1 a.text-light:hover {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-body {
+/* body {
   background: #f4f7f6;
-}
+} */
 
 .wrapper .header {
   width: 100%;
@@ -428,11 +433,9 @@ margin-right: auto;
 
 /*Resize the wrap to see the search bar change!*/
 .wrap_serach {
-  /* margin: 20px auto; */
   margin: 20px ;
-
   width: 100%;
-  max-width: 250px;
+  max-width: 450px;
 /* display: flex;  */
 }
 
@@ -518,14 +521,6 @@ font-size: 20px;
 margin-left: 5px;
 }
 
-@media screen and (min-width: 768px) {
-
-.wrap_serach {
-
-  margin-left: 150px!important;
-}
-
-}
 
 
 /* =========== */
