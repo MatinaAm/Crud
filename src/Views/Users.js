@@ -20,6 +20,9 @@ const customStyles = {
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
     zIndex: "3",
+    // backgroundColor: "rgba(255, 255, 255, 0.75)",
+    borderRadius: "12px",
+    border: "1px solid rgba(209, 213, 219, 0.3)",
     // height: '70vh',
   },
 };
