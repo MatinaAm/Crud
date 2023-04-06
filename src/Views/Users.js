@@ -130,6 +130,7 @@ const Users = (props) => {
               onRequestClose={closeModal}
               style={customStyles}
               contentLabel="Example Modal"
+              shouldCloseOnOverlayClick={false}
             >
               <ConfirmPopup
                 closeModal={closeModal}

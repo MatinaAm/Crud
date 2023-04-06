@@ -122,19 +122,18 @@ form .input-box span.details{
    border-radius: 5px;
    border: none;
    color: #fff;
-   font-size: 18px;
+   font-size: 15px;
    font-weight: 500;
-   letter-spacing: 1px;
    cursor: pointer;
-   transition: all 0.3s ease;
-   
+   transition: all 0.3s ease; 
  }
+ 
  .bg-blue{
     background-color: #4070f4;
  }
  .bg-gray{
     background-color: gray;
-    padding-left: 12px;
+    /* padding-left: 12px; */
 
  }
  .body form .button button:hover{

@@ -30,9 +30,19 @@ body {
   background-image: url("mesh-gradient.png");
   background-position: 50%;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   height: 100%;
 }
+
+
+@media screen and (max-width: 568px) {
+  body {
+  background-position: 100%!important;
+  }
+
+
+}
+
 
 h1 a {
   font-size: 1.8rem;
@@ -352,6 +362,7 @@ label.cover i {
 	background-color: rgba(236, 234, 234, 0.75)!important;
   
 }
+
 
 
 /* =======confirm=========== */
