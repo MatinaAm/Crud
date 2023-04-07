@@ -47,11 +47,11 @@ const User = (props) => {
             <FaEdit
               onClick={props.update}
               className="mr-2"
-              fill="#157DEC"
+              fill="#1FC2DB"
               size={"27px"}
             />
 
-            <FaTrash onClick={props.delete} fill="red" size={"25px"} />
+            <FaTrash onClick={props.delete} fill="#DC381F" size={"25px"} />
           </div>
         </div>
 
