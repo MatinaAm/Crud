@@ -48,14 +48,14 @@ const User = (props) => {
               onClick={props.update}
               className="mr-2"
               fill="#1FC2DB"
-              size={"27px"}
+              size={"19px"}
             />
 
-            <FaTrash onClick={props.delete} fill="#DC381F" size={"25px"} />
+            <FaTrash onClick={props.delete} fill="#DC381F" size={"19px"} />
           </div>
         </div>
 
-        <div class="address">{post?.address}</div>
+        {/* <div class="address">{post?.address}</div> */}
       </div>
     </div>
   );
