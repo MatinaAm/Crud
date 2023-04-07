@@ -55,7 +55,7 @@ const User = (props) => {
           </div>
         </div>
 
-        {/* <div class="address">{post?.address}</div> */}
+        <div class="address">Lorem Ipsum</div>
       </div>
     </div>
   );
